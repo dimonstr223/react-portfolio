@@ -2,6 +2,7 @@ import './scss/App.scss'
 
 import Info from './components/Info'
 import Skillset from './components/Skillset'
+import Portfolio from './components/Portfolio'
 
 function App() {
 	return (
@@ -9,7 +10,7 @@ function App() {
 			<div className='container'>
 				<Info />
 				<Skillset />
-				<div></div>
+				<Portfolio />
 			</div>
 		</div>
 	)
