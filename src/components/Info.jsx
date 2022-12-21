@@ -10,7 +10,7 @@ const Info = () => {
 		<div className='info'>
 			<div className='info__top'>
 				<div className='avatar__wrapper'>
-					<img src={avatar} alt='Avatar' />{' '}
+					<img src={avatar} alt='Avatar' />
 				</div>
 				<h1 className='name'>Dmitry Mikolutsky</h1>
 				<div>
