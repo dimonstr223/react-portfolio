@@ -61,9 +61,9 @@ body {
 		}
 
 		.name {
-			letter-spacing: 2px;
+			letter-spacing: 3px;
 			text-transform: uppercase;
-			font-size: 22px;
+			font-size: 24px;
 			flex: 1;
 		}
 
@@ -112,6 +112,12 @@ body {
 			}
 		}
 	}
+}
+
+.about {
+	position: absolute;
+	max-width: 400px;
+	padding: 15px;
 }
 
 .skillset {
