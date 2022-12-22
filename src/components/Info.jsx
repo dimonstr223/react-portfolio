@@ -4,8 +4,12 @@ import avatar from '../assets/img/me.jpg'
 import telegram from '../assets/img/icons/telegram.svg'
 import phone from '../assets/img/icons/phone.svg'
 import email from '../assets/img/icons/email.svg'
+import About from './About'
 
 const Info = () => {
+	const [isAboutOpened, setIsAboutOpened] = React.useState(false)
+	console.log(isAboutOpened)
+
 	return (
 		<div className='info'>
 			<div className='info__top'>
@@ -13,8 +17,18 @@ const Info = () => {
 					<img src={avatar} alt='Avatar' />
 				</div>
 				<h1 className='name'>Dmitry Mikolutsky</h1>
-				<div>
-					<button className='about__button'>About me</button>
+				<div
+					className='about__wrapper'
+					onMouseEnter={() => setIsAboutOpened(true)}
+					onMouseLeave={() => setIsAboutOpened(false)}
+					style={{ position: 'relative' }}
+				>
+					<button
+						className={isAboutOpened ? 'about__button_active' : 'about__button'}
+					>
+						About me
+					</button>
+					<About isAboutOpened={isAboutOpened} />
 				</div>
 			</div>
 			<div className='info__bottom'>
