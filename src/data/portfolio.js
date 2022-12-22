@@ -1,28 +1,28 @@
-import calculator from '../assets/img/portfolio/caclulator.jpg'
+import lineStore from '../assets/img/portfolio/lineStore.svg'
 
 const portfolio = [
 	{
 		id: 1,
-		title: 'Calculator',
-		image: calculator,
+		title: 'LineStore (online store)',
+		image: lineStore,
 		width: 235,
 	},
 	{
 		id: 2,
-		title: 'Calculator',
-		image: calculator,
+		title: 'LineStore',
+		image: lineStore,
 		width: 235,
 	},
 	{
 		id: 3,
-		title: 'Calculator',
-		image: calculator,
+		title: 'LineStore',
+		image: lineStore,
 		width: 235,
 	},
 	{
 		id: 4,
-		title: 'Calculator',
-		image: calculator,
+		title: 'LineStore',
+		image: lineStore,
 		width: 235,
 	},
 ]

@@ -15,11 +15,11 @@ const Portfolio = () => {
 								<img
 									src={item.image}
 									alt={item.title}
-									width={item.width}
+									// width={item.width}
 									className='img'
 								/>
 							</div>
-							<h3 className='portfolio__title'>LineStore</h3>
+							<h3 className='portfolio__title'>{item.title}</h3>
 						</a>
 					</li>
 				))}
