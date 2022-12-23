@@ -6,6 +6,12 @@ body {
 	overflow-x: hidden;
 }
 
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .App {
 	&::before,
 	&::after {
@@ -30,12 +36,6 @@ body {
 		overflow: hidden;
 		animation: circleMoveLast 30s infinite, circle 5s infinite;
 	}
-}
-
-.container {
-	max-width: 1020px;
-	margin: 0 auto;
-	padding: 0 10px;
 }
 
 @keyframes circle {
