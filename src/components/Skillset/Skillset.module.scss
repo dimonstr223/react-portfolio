@@ -1,0 +1,32 @@
+.skillset {
+	background-color: rgb(19, 19, 19);
+	border-radius: 5px;
+	padding: 30px;
+	margin-bottom: 20px;
+
+	.skillset__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		gap: 40px;
+
+		.emptyBlock {
+			font-size: 0;
+			flex-grow: 1;
+		}
+
+		.skillset__item {
+			display: flex;
+			flex-direction: column;
+			width: 120px;
+			gap: 15px;
+			align-items: center;
+			text-align: center;
+
+			.skillset__title {
+				font-weight: 200;
+			}
+		}
+	}
+}

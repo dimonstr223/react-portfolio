@@ -1,4 +1,5 @@
 @import './libs/normalize';
+@import './libs/vars.scss';
 
 body {
 	padding: 100px 0 60px;
@@ -12,7 +13,7 @@ body {
 		position: fixed;
 		width: 400px;
 		height: 400px;
-		background-color: #00e2d7;
+		background-color: $blueAccent;
 		border-radius: 50%;
 		top: -200px;
 		left: -200px;
@@ -35,164 +36,6 @@ body {
 	max-width: 1020px;
 	margin: 0 auto;
 	padding: 0 10px;
-}
-
-.about,
-.about__active {
-	position: absolute;
-	// margin-top: 10px;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	background-color: rgb(48, 48, 48);
-	right: 0;
-	width: 400px;
-	font-size: 18px;
-	padding: 15px;
-	line-height: 1.7rem;
-	animation: about 0.5s both;
-	opacity: 0;
-	visibility: hidden;
-	transition: opacity 0.2s, visibility 0.2s, border 0.2s;
-}
-
-.about__active {
-	opacity: 1;
-	visibility: visible;
-	// border-top: 3px solid #00e2d7;
-	&::before {
-		position: absolute;
-		content: '';
-		height: 3px;
-		width: 0;
-		top: 0;
-		right: 0;
-		background-color: #00e2d7;
-		animation: aboutTop 0.5s both ease;
-	}
-}
-
-@keyframes aboutTop {
-	to {
-		width: 100%;
-	}
-}
-.skillset {
-	background-color: rgb(19, 19, 19);
-	border-radius: 5px;
-	padding: 30px;
-	margin-bottom: 20px;
-
-	.skillset__list {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin: 0 auto;
-		gap: 40px;
-
-		.emptyBlock {
-			font-size: 0;
-			flex-grow: 1;
-		}
-
-		.skillset__item {
-			display: flex;
-			flex-direction: column;
-			width: 120px;
-			gap: 15px;
-			align-items: center;
-			text-align: center;
-
-			.skillset__title {
-				font-weight: 200;
-			}
-		}
-	}
-}
-
-.portfolio {
-	.portfolio__list {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		gap: 20px;
-
-		.portfolio__item {
-			position: relative;
-			cursor: pointer;
-			padding-bottom: 10px;
-
-			.portfolio__title {
-				transition: opacity 0.5s, color 1s;
-			}
-			&:hover {
-				.animation {
-					transition: opacity 1s, color 0.2s;
-					animation: opacity 1s infinite, transform 1s infinite;
-				}
-
-				.portfolio__title {
-					color: #00e2d7;
-				}
-			}
-
-			.img__wrapper {
-				width: 315px;
-				height: 180px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background: linear-gradient(
-					90deg,
-					rgba(0, 159, 152, 1) 0%,
-					rgba(0, 60, 57, 1) 100%
-				);
-
-				margin-bottom: 5px;
-				border-top-left-radius: 30px;
-				border-bottom-right-radius: 30px;
-				overflow: hidden;
-				.img {
-					padding: 10px;
-					width: 150px;
-					height: 150px;
-					border-radius: 50%;
-					object-fit: contain;
-					background-color: #000;
-				}
-			}
-		}
-	}
-}
-
-.animation {
-	position: absolute;
-	width: 100%;
-	border-top-left-radius: 30px;
-	border-bottom-right-radius: 30px;
-	background-color: #00e2d7;
-	opacity: 0;
-	top: 0;
-	right: 0;
-	z-index: -1;
-
-	height: calc(100% - 5px);
-}
-
-@keyframes opacity {
-	from {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 0;
-	}
-}
-@keyframes transform {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.2);
-	}
 }
 
 @keyframes circle {

@@ -1,0 +1,39 @@
+@import '../../scss/libs/vars.scss';
+
+.about,
+.about__active {
+	position: absolute;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: rgb(48, 48, 48);
+	right: 0;
+	width: 400px;
+	font-size: 18px;
+	padding: 15px;
+	line-height: 1.7rem;
+	animation: about 0.5s both;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s, visibility 0.2s, border 0.2s;
+}
+
+.about__active {
+	opacity: 1;
+	visibility: visible;
+	&::before {
+		position: absolute;
+		content: '';
+		height: 3px;
+		width: 0;
+		top: 0;
+		right: 0;
+		background-color: $blueAccent;
+		animation: aboutTop 0.5s both ease;
+	}
+}
+
+@keyframes aboutTop {
+	to {
+		width: 100%;
+	}
+}
