@@ -10,7 +10,11 @@ const Portfolio = () => {
 			<ul className={styles.portfolio__list}>
 				{portfolio.map(item => (
 					<li key={item.id} className={styles.portfolio__item}>
-						<a href='#' className={styles.portfolio__link}>
+						<a
+							href={item.link}
+							target='_blank'
+							className={styles.portfolio__link}
+						>
 							<div className={styles.img__wrapper}>
 								<div className={styles.animation} />
 								<img src={item.image} alt={item.title} className={styles.img} />

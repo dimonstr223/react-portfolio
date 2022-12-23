@@ -3,27 +3,27 @@ import lineStore from '../assets/img/portfolio/lineStore.svg'
 const portfolio = [
 	{
 		id: 1,
-		title: 'LineStore (online store)',
+		title: 'LineStore (React online store)',
 		image: lineStore,
-		width: 235,
+		link: 'https://dimonstr223.github.io/line-store/',
 	},
 	{
 		id: 2,
-		title: 'LineStore',
+		title: 'Calculator (JS)',
 		image: lineStore,
-		width: 235,
+		link: 'https://dimonstr223.github.io/calculator/',
 	},
 	{
 		id: 3,
-		title: 'LineStore',
+		title: 'Meta (Landing)',
 		image: lineStore,
-		width: 235,
+		link: 'https://dimonstr223.github.io/meta-landing/',
 	},
 	{
 		id: 4,
-		title: 'LineStore',
+		title: 'Tic-Tac-Toe (JS game)',
 		image: lineStore,
-		width: 235,
+		link: 'https://dimonstr223.github.io/tic-tac-toe/',
 	},
 ]
 
