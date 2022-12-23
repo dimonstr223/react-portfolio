@@ -1,12 +1,12 @@
 import React from 'react'
 
-import avatar from '../assets/img/me.jpg'
-import telegram from '../assets/img/icons/telegram.svg'
-import phone from '../assets/img/icons/phone.svg'
-import email from '../assets/img/icons/email.svg'
-import About from './About'
+import avatar from '../../assets/img/me.jpg'
+import telegram from '../../assets/img/icons/telegram.svg'
+import phone from '../../assets/img/icons/phone.svg'
+import email from '../../assets/img/icons/email.svg'
+import About from '../About/About'
 
-import styles from '../scss/components/Info.module.scss'
+import styles from './Info.module.scss'
 
 const Info = () => {
 	const [isAboutOpened, setIsAboutOpened] = React.useState(false)

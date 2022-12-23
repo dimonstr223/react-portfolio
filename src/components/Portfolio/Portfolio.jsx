@@ -1,7 +1,7 @@
 import React from 'react'
 
-import portfolio from '../data/portfolio'
-import AnimationBlock from '../components/AnimationBlock'
+import portfolio from '../../data/portfolio'
+import AnimationBlock from '../AnimationBlock/AnimationBlock'
 
 const Portfolio = () => {
 	return (

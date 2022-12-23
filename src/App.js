@@ -1,8 +1,8 @@
 import './scss/App.scss'
 
-import Info from './components/Info'
-import Skillset from './components/Skillset'
-import Portfolio from './components/Portfolio'
+import Info from './components/Info/Info'
+import Skillset from './components/Skillset/Skillset'
+import Portfolio from './components/Portfolio/Portfolio'
 
 function App() {
 	return (
