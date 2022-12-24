@@ -1,4 +1,7 @@
-import lineStore from '../assets/img/portfolio/lineStore.svg'
+import lineStore from '../assets/img/portfolio/lineStore.jpg'
+import calculator from '../assets/img/portfolio/calculator.jpg'
+import meta from '../assets/img/portfolio/meta.jpg'
+import ticTacToe from '../assets/img/portfolio/tic-tac-toe.jpg'
 
 const portfolio = [
 	{
@@ -10,19 +13,19 @@ const portfolio = [
 	{
 		id: 2,
 		title: 'Calculator (JS)',
-		image: lineStore,
+		image: calculator,
 		link: 'https://dimonstr223.github.io/calculator/',
 	},
 	{
 		id: 3,
 		title: 'Meta (Landing)',
-		image: lineStore,
+		image: meta,
 		link: 'https://dimonstr223.github.io/meta-landing/',
 	},
 	{
 		id: 4,
 		title: 'Tic-Tac-Toe (JS game)',
-		image: lineStore,
+		image: ticTacToe,
 		link: 'https://dimonstr223.github.io/tic-tac-toe/',
 	},
 ]
