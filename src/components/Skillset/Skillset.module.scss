@@ -30,3 +30,22 @@
 		}
 	}
 }
+
+@media (max-width: 450px) {
+	.skillset {
+		padding: 20px;
+		.skillset__list {
+			justify-content: space-around;
+
+			.emptyBlock {
+				display: none;
+			}
+			.skillset__item {
+				width: 100px;
+				.skillset__title {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

@@ -1,4 +1,5 @@
 @import '../../scss/libs/vars.scss';
+@import '../../scss/media.scss';
 
 .about,
 .about__active {
@@ -18,6 +19,7 @@
 }
 
 .about__active {
+	z-index: 1;
 	opacity: 1;
 	visibility: visible;
 	&::before {
@@ -36,4 +38,25 @@
 	to {
 		width: 100%;
 	}
+}
+
+@media screen and (max-width: 750px) {
+	.about,
+	.about__active {
+		right: auto;
+		width: 350px;
+		&::before {
+			right: auto;
+			left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.about,
+	.about__active {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 450px) {
 }

@@ -3,7 +3,7 @@ import lineStore from '../assets/img/portfolio/lineStore.svg'
 const portfolio = [
 	{
 		id: 1,
-		title: 'LineStore (React online store)',
+		title: 'LineStore (React store)',
 		image: lineStore,
 		link: 'https://dimonstr223.github.io/line-store/',
 	},

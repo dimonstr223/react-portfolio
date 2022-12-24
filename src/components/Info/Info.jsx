@@ -10,7 +10,6 @@ import styles from './Info.module.scss'
 
 const Info = () => {
 	const [isAboutOpened, setIsAboutOpened] = React.useState(false)
-	console.log(isAboutOpened)
 
 	return (
 		<div className={styles.info}>
@@ -18,23 +17,25 @@ const Info = () => {
 				<div className={styles.avatar__wrapper}>
 					<img src={avatar} alt='Avatar' />
 				</div>
-				<h1 className={styles.name}>Dmitry Mikolutsky</h1>
-				<div
-					className={styles.about__wrapper}
-					onMouseEnter={() => setIsAboutOpened(true)}
-					onMouseLeave={() => setIsAboutOpened(false)}
-					style={{ position: 'relative' }}
-				>
-					<button
-						className={
-							isAboutOpened
-								? styles['about__button_active']
-								: styles['about__button']
-						}
+				<div className={styles.wrapper}>
+					<h1 className={styles.name}>Dmitry Mikolutsky</h1>
+					<div
+						className={styles.about__wrapper}
+						onMouseEnter={() => setIsAboutOpened(true)}
+						onMouseLeave={() => setIsAboutOpened(false)}
+						style={{ position: 'relative' }}
 					>
-						About me
-					</button>
-					<About isAboutOpened={isAboutOpened} />
+						<button
+							className={
+								isAboutOpened
+									? styles['about__button_active']
+									: styles['about__button']
+							}
+						>
+							About me
+						</button>
+						<About isAboutOpened={isAboutOpened} />
+					</div>
 				</div>
 			</div>
 			<div className={styles.info__bottom}>
