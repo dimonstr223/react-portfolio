@@ -1,10 +1,12 @@
 import React from 'react'
 
+import About from '../About/About'
+
 import avatar from '../../assets/img/me.jpg'
 import telegram from '../../assets/img/icons/telegram.svg'
 import phone from '../../assets/img/icons/phone.svg'
 import email from '../../assets/img/icons/email.svg'
-import About from '../About/About'
+import github from '../../assets/img/icons/github-header.svg'
 
 import styles from './Info.module.scss'
 
@@ -46,6 +48,7 @@ const Info = () => {
 							<a
 								href='https://t.me/sqoothq'
 								target='_blank'
+								rel='noreferrer'
 								className={styles.contacts__link}
 							>
 								<img src={telegram} width={30} alt='Telegram' />
@@ -62,6 +65,16 @@ const Info = () => {
 								className={styles.contacts__link}
 							>
 								<img src={email} width={30} alt='Email' />
+							</a>
+						</li>
+						<li className={styles.contacts__item}>
+							<a
+								href='https://github.com/dimonstr223'
+								target='_blank'
+								rel='noreferrer'
+								className={styles.contacts__link}
+							>
+								<img src={github} width={30} alt='GitHub' />
 							</a>
 						</li>
 					</ul>
