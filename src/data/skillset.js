@@ -16,7 +16,7 @@ const skillset = [
 	},
 	{
 		id: 2,
-		title: 'Redux',
+		title: 'Redux TK',
 		image: redux,
 		width: 60,
 	},
